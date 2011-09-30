@@ -1,10 +1,14 @@
 Just10cards::Application.routes.draw do
+  get "default/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+  match '/' => "default#show"
+  match '/cards' => "default#cards"
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
