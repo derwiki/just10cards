@@ -1,1 +1,9 @@
-<%= @card -%>
+<%- 5.times do -%>
+  <div>
+    <%- 2.times do -%>
+      <span>
+        <%= @card -%>
+      </span>
+    <%- end -%>
+  </div>
+<%- end -%>
