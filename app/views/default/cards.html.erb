@@ -4,10 +4,11 @@
 <div>
   <pre class="card">
     <%- 5.times do -%>
-        <%= @horizontal_divider -%>
+<%= @horizontal_divider -%>
       <%- @card.each do |line| -%>
-        |<%= ([line] * 2).join('|').html_safe %>|
+|<%= ([line] * 2).join('|').html_safe %>|
       <%- end -%>
     <%- end -%>
+<%= @horizontal_divider -%>
   </pre>
 </div>
