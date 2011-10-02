@@ -9,7 +9,7 @@ class DefaultController < ApplicationController
   end
 
   def cards
-    @card = params[:card].split
+    @card = params[:card].split "\r\n"
     while @card.size < CARD_HEIGHT do
       @card << ' '
     end
