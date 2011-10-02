@@ -4,3 +4,12 @@
 .card {
   font-family: "Courier New";
 }
+textarea.card {
+  font-size: 24px;
+}
+form input[type='submit'] {
+  float: right;
+}
+.form_wrapper {
+  width: 585px;
+}
