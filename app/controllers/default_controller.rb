@@ -1,11 +1,10 @@
 class DefaultController < ApplicationController
   def show
-    #redirect_to cards_default_url
-    redirect_to "/cards"
-    return
+    render
   end
 
   def cards
-     @card = "This is the card"
+    @card = params[:card].split("\r\n").map {|line| line.center(40)}
+    @horizontal_divider = "+#{(['-' * 40] * 2).join('+')}+\n"
   end
 end
