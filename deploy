@@ -1,0 +1,4 @@
+#!/bin/bash
+command="cd ~/src/just10cards && \
+git fetch && git reset --hard origin/HEAD"
+ssh derwiki.net $command
