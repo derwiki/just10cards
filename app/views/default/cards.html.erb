@@ -1,15 +1,12 @@
-<%- if params[:name] -%>
-  Personalized business cards for <%= params[:name] -%>
-<%- end -%>
 <div>
   <pre class="card">
     <%- 5.times do -%>
-<%= @horizontal_divider -%>
++<%= @horizontal_divider %>+
       <%- @card.each do |line| -%>
-|<%= ([line] * 2).join('|').html_safe %>|
+|<%= ([line] * 2).join('|') %>|
       <%- end -%>
-|<%= (["just10cards.com".rjust(40)] * 2).join('|') -%>|
+|<%= @tagline %>|
     <%- end -%>
-<%= @horizontal_divider -%>
++<%= @horizontal_divider %>+
   </pre>
 </div>
