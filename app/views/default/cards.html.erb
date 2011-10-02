@@ -1,9 +1,9 @@
 <div>
   <pre class="card">
-    <%- 5.times do -%>
+    <%- CARD_ROWS.times do -%>
 +<%= @horizontal_divider %>+
       <%- @card.each do |line| -%>
-|<%= ([line] * 2).join('|') %>|
+|<%= line %>|
       <%- end -%>
 |<%= @tagline %>|
     <%- end -%>
