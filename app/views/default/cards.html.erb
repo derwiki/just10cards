@@ -8,6 +8,7 @@
       <%- @card.each do |line| -%>
 |<%= ([line] * 2).join('|').html_safe %>|
       <%- end -%>
+|<%= (["just10cards.com".rjust(40)] * 2).join('|') -%>|
     <%- end -%>
 <%= @horizontal_divider -%>
   </pre>
