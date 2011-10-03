@@ -6,7 +6,7 @@
   src: url(monaco.ttf) format("truetype");
 }
 .card {
-  font-family: Monaco;
+  font-family: Monaco, "Courier New";
 }
 textarea.card {
   font-size: 24px;
