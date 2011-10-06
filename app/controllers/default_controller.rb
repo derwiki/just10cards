@@ -14,7 +14,7 @@ class DefaultController < ApplicationController
       @card << ' '
     end
     @card = @card.map do |line|
-      ([line.center(CARD_WIDTH)] * CARD_COLS).join('|')
+      ([line.strip.center(CARD_WIDTH)] * CARD_COLS).join('|')
     end
 
     @horizontal_divider = (['-' * CARD_WIDTH] * CARD_COLS).join('+')
